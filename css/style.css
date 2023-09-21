@@ -1,0 +1,98 @@
+/* primary color bg #F0EEE9; font color #595959; 
+secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #595959;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  a {
+    color: #E3A67A;
+    text-decoration: none;
+  }
+
+  a:visited { 
+    color: #6e22a9;
+  }
+
+  a:hover {
+    color: #E3A67A;
+    text-decoration: underline;
+  }
+
+  a:active { 
+    color: #E3A67A;
+  }
+
+  a:hover,
+  a:focus {
+  color: #E3A67A;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block; 
+  background-color: #E3A67A;
+  color: #ffffff; 
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #d2d2d2; 
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  display: inline-block; 
+  background-color: #E3A67A;
+  color: #ffffff; 
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #d2d2d2; 
+  transition: 0.2s opacity;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #E3A67A;
+  text-transform: uppercase;
+  border: 2px solid #E3A67A;
+}
+
+.button.contact:hover {
+  background-color: #E3A67A;
+  color: #ffffff;
+}
+
