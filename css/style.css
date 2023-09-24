@@ -1,13 +1,16 @@
 /* primary color bg #F0EEE9; font color #595959; 
 secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+ body {
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #595959;
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 1.6; 
   }
   
   h1, h2, h3, h4 {
@@ -46,7 +49,7 @@ body {
   }
 
   a:hover {
-    color: #E3A67A;
+    color: #595959;
     text-decoration: underline;
   }
 
@@ -94,5 +97,132 @@ body {
 .button.contact:hover {
   background-color: #E3A67A;
   color: #ffffff;
+}
+
+/* Layout Styling */
+
+header {
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.css-box-shadow {
+  width: [object Object]px; 
+  height: [object Object]px; 
+  background: #ffffff; 
+  border: solid #5d5c5c 1px; 
+  box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1); 
+  -webkit-box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 0 15px;
+}
+
+.logo {
+  padding: 15px;
+  max-width: 115px;
+}
+
+nav {
+  background-color: #F0EEE9;
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #E3A67A;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#intro .row { 
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a; 
+}
+
+.copyright {
+  text-align: center;
+}
+
+main {
+  padding-top: 150px;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  background-color: #F0EEE9;
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero p {
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* work */
+
+.work {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.getintouch {
+  background-color: #F0EEE9;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* about */
+
+.about {
+  background-color: #F0EEE9;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* work balibago project */
+
+.bgcolor {
+  background-color: #F0EEE9;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.main {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
 }
 
