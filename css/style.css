@@ -6,7 +6,7 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
 }
 
  body {
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     font-family: 'Lato', sans-serif;
     font-size: 16px; 
     font-weight: 300; 
@@ -15,7 +15,9 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
   
   h1, h2, h3, h4 {
     line-height: 1.4;
+    margin-left: 40px;
   }
+
   h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -30,9 +32,14 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
     font-size: 1.75em;
     font-weight: 400;
   }
+
   h4 {
     font-size: 1.35em;
     font-weight: 400;
+  }
+
+  p {
+    margin-left: 40px;
   }
 
   img {
@@ -75,6 +82,10 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
 }
 
 .button:hover {
+  opacity: 0.8;
+}
+
+.button:hover {
   display: inline-block; 
   background-color: #E3A67A;
   color: #ffffff; 
@@ -99,6 +110,10 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
   color: #ffffff;
 }
 
+.button-space {
+  padding: 30px;
+}
+
 /* Layout Styling */
 
 header {
@@ -111,8 +126,8 @@ header {
 .css-box-shadow {
   width: [object Object]px; 
   height: [object Object]px; 
-  background: #ffffff; 
-  border: solid #5d5c5c 1px; 
+  background-color: #f3f3f3;
+  border-bottom: solid #c3c0c0 1px; 
   box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1); 
   -webkit-box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1); 
   -moz-box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1); 
@@ -120,7 +135,7 @@ header {
 
 .container {
   background-color: #ffffff;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .logo {
@@ -130,6 +145,8 @@ header {
 
 nav {
   background-color: #F0EEE9;
+  padding-top: 20px;
+  margin-right: 50px;
   display: inline-block;
   width: 100%;
 }
@@ -150,25 +167,25 @@ nav > ul > li > a {
   color: #E3A67A;
 }
 
+.headerbgcolor {
+  background-color: #F0EEE9;
+}
+
 .row {
-  margin: 25px 0;
+  margin: 0;
 }
 
 #intro .row { 
-  padding-bottom: 25px; 
+  padding-bottom: 0; 
   border-bottom: 1px solid #4a4a4a; 
 }
 
-.copyright {
-  text-align: center;
-}
-
 main {
-  padding-top: 150px;
+  padding-top: 99px;
 }
 
 #hero {
-  padding: 20px 0;
+  padding: 40px 0;
   display: inline-block;
   width: 100%;
   background-color: #F0EEE9;
@@ -198,6 +215,7 @@ main {
 .getintouch {
   background-color: #F0EEE9;
   display: inline-block;
+  text-align: center;
   width: 100%;
   padding: 20px 0;
 }
@@ -209,6 +227,16 @@ main {
   display: inline-block;
   width: 100%;
   padding: 20px 0;
+}
+
+.imagesize {
+  display: inline-block;
+  margin-left: 40px;
+  width: 30%;
+}
+
+.imgradius {
+  border-radius: 50%;
 }
 
 /* work balibago project */
@@ -225,4 +253,141 @@ main {
   width: 100%;
   padding: 20px 0;
 }
+
+.mobile-size {
+  display: inline-block;
+  width: 20%
+}
+
+.mobile-size-2 {
+  display: inline-block;
+  width: 15%
+}
+
+.img-size-3 {
+  display: inline-block;
+  width: 25%;
+}
+
+.img-size-4 {
+  display: inline-block;
+  width: 50%;
+}
+
+.img-size-5 {
+  display: inline-block;
+  width: 75%;
+}
+
+.img-size-6 {
+  display: inline-block;
+  width: 35%;
+}
+
+/* animation */
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+/* footer */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #F0EEE9;
+    gap: 20px;
+}
+
+.flex-container-2 {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+
+/* media queries */
+
+
+@media only screen and (min-width: 640px) {
+}
+
+header {
+  text-align: unset;
+  padding: 0;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+#hero span {
+  display: block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1440px) {
+}
+
+@media only screen and (min-width: 1920px) {
+}
+
 
