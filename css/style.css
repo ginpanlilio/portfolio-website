@@ -15,7 +15,6 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
   
   h1, h2, h3, h4 {
     line-height: 1.4;
-    margin-left: 40px;
   }
 
   h1 {
@@ -36,10 +35,6 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
   h4 {
     font-size: 1.35em;
     font-weight: 400;
-  }
-
-  p {
-    margin-left: 40px;
   }
 
   img {
@@ -209,7 +204,6 @@ main {
   background-color: #ffffff;
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
 }
 
 .getintouch {
@@ -343,7 +337,6 @@ main {
 
 
 @media only screen and (min-width: 640px) {
-}
 
 header {
   text-align: unset;
@@ -375,8 +368,11 @@ nav {
   display: table;
 }
 
-@media only screen and (min-width: 1024px) {
+
+
 }
+
+@media only screen and (min-width: 1024px) {
 
 .container {
   max-width: 1200px;
@@ -384,10 +380,22 @@ nav {
   margin-right: auto;
 }
 
+.col-md-5 {
+  width: 50%;
+}
+
+.col-md-7 {
+  width: 50%;
+}
+
+}
+
 @media only screen and (min-width: 1440px) {
+
 }
 
 @media only screen and (min-width: 1920px) {
+
 }
 
 
