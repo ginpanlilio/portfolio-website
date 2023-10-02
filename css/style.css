@@ -276,7 +276,7 @@ main {
 
 .img-size-5 {
   display: inline-block;
-  width: 75%;
+  width: 60%;
 }
 
 .img-size-6 {
@@ -329,13 +329,14 @@ main {
     justify-content: center;
     background-color: #F0EEE9;
     gap: 20px;
+
 }
 
 .flex-container-2 {
   display: flex;
   justify-content: center;
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 
@@ -387,20 +388,36 @@ nav {
 }
 
 .col-lg-5 {
-  width: 50%;
+  width: 40%;
 }
 
 .col-lg-7 {
-  width: 50%;
+  width: 60%;
 }
 
 }
 
 @media only screen and (min-width: 1440px) {
 
+.col-lg-5 {
+  width: 40%;
+}
+  
+.col-lg-7 {
+  width: 60%;
+}
+
 }
 
 @media only screen and (min-width: 1920px) {
+
+.col-lg-5 {
+    width: 40%;
+}
+  
+.col-lg-7 {
+  width: 60%;
+}
 
 }
 
