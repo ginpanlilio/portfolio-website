@@ -220,7 +220,7 @@ main {
   background-color: #F0EEE9;
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
+
 }
 
 .imagesize {
@@ -244,13 +244,11 @@ main {
   background-color: #F0EEE9;
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
 }
 
 .main {
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
 }
 
 .mobile-size {
@@ -329,7 +327,6 @@ main {
     justify-content: center;
     background-color: #F0EEE9;
     gap: 20px;
-
 }
 
 .flex-container-2 {
@@ -338,7 +335,6 @@ main {
   background-color: #ffffff;
   padding: 20px;
 }
-
 
 /* media queries */
 
@@ -374,9 +370,6 @@ nav {
   clear: both;
   display: table;
 }
-
-
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -399,25 +392,10 @@ nav {
 
 @media only screen and (min-width: 1440px) {
 
-.col-lg-5 {
-  width: 40%;
-}
-  
-.col-lg-7 {
-  width: 60%;
-}
 
 }
 
 @media only screen and (min-width: 1920px) {
-
-.col-lg-5 {
-    width: 40%;
-}
-  
-.col-lg-7 {
-  width: 60%;
-}
 
 }
 
