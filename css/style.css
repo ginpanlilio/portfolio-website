@@ -20,6 +20,7 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
   h1 {
     font-size: 2.75em;
     font-weight: 700;
+
   }
   
   h2 {
@@ -112,7 +113,6 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
 /* Layout Styling */
 
 header {
-  text-align: center;
   padding: 0;
   position: fixed;
   width: 100%;
@@ -135,31 +135,42 @@ header {
 
 .logo {
   padding: 15px;
-  max-width: 115px;
+  max-width: 100px;
 }
 
-nav {
-  background-color: #F0EEE9;
-  padding-top: 20px;
-  margin-right: 50px;
-  display: inline-block;
-  width: 100%;
-}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
-  padding: 0 10px;
+  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 500;
   color: #E3A67A;
+}
+
+/* task 2.3 Nav and hamburger menu */
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 .headerbgcolor {
@@ -168,6 +179,7 @@ nav > ul > li > a {
 
 .row {
   margin: 0;
+  padding-top: 20px;
 }
 
 #intro .row { 
@@ -176,11 +188,12 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 99px;
+  padding-top: 56px;
 }
 
 #hero {
   padding: 40px 0;
+
   display: inline-block;
   width: 100%;
   background-color: #F0EEE9;
@@ -188,7 +201,7 @@ main {
 
 #hero h1 {
   text-align: center;
-  margin: 0;
+  margin-top: 25px;
   padding: 0.67em 0;
 }
 
@@ -219,6 +232,7 @@ main {
 .about {
   background-color: #F0EEE9;
   display: inline-block;
+  margin-top: 30px;
   width: 100%;
 
 }
@@ -248,6 +262,7 @@ main {
 
 .main {
   display: inline-block;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -280,6 +295,21 @@ main {
 .img-size-6 {
   display: inline-block;
   width: 35%;
+}
+
+/* responsive */
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* animation */
@@ -343,7 +373,7 @@ main {
 
 header {
   text-align: unset;
-  padding: 0;
+  padding: 10px 0 4px;
 }
 
 nav {
@@ -370,6 +400,19 @@ nav {
   clear: both;
   display: table;
 }
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
