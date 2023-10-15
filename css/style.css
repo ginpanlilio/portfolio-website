@@ -106,9 +106,6 @@ secondary colors orange #E3A67A; yellow #F5DBB8; blush #F8EAE2; blue #CAD1DB */
   color: #ffffff;
 }
 
-.button-space {
-  padding: 30px;
-}
 
 /* Layout Styling */
 
@@ -192,8 +189,7 @@ main {
 }
 
 #hero {
-  padding: 40px 0;
-
+  padding: 30px 0;
   display: inline-block;
   width: 100%;
   background-color: #F0EEE9;
@@ -316,6 +312,38 @@ main {
   width: 35%;
 }
 
+/* contact page */
+
+.container-contact {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+
 /* responsive */
 
 .navtoggle.responsive nav {
@@ -383,6 +411,11 @@ main {
   justify-content: center;
   background-color: #ffffff;
   padding: 20px;
+}
+
+.button-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* media queries */
@@ -474,6 +507,34 @@ nav > ul {
 
 .item-2 {
   margin-right: 50px;
+}
+
+/* contact page */
+
+.container-contact {
+  margin: 50px 180px;
+  display: flex;
+  align-items: center;
+}
+
+input[type=text], select, textarea {
+  width: 800px; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+input[type=email] {
+  width: 800px; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
 }
 
 }
