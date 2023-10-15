@@ -418,6 +418,26 @@ input[type=email] {
   margin-bottom: 20px;
 }
 
+.resume-row-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    margin: 20px 200px 20px 200px; 
+}
+
+.resume-box {
+  display:flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  border: 2px solid;
+}
+
+.button-space-footer {
+  margin-bottom: 20px;
+}
+
 /* media queries */
 
 
