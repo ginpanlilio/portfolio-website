@@ -236,6 +236,10 @@ main {
   background-color: #F0EEE9;
 }
 
+.margin-left {
+  margin-left: 20px;
+}
+
 /* about */
 
 .about {
@@ -281,7 +285,6 @@ main {
   justify-content: space-evenly;
   align-items:flex-start;
   margin: 0 200px 100px 200px; 
-  
 }
 
 /* work balibago project */
@@ -319,14 +322,14 @@ main {
   width: 50%;
 }
 
-.img-size-5 {
-  display: inline-block;
-  width: 60%;
-}
 
 .img-size-6 {
   display: inline-block;
   width: 35%;
+}
+
+.spacer {
+  height: 50px;
 }
 
 /* contact page */
@@ -435,30 +438,46 @@ input[type=email] {
   margin-bottom: 20px;
 }
 
-.resume-row-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items:flex-start;
-    margin: 20px 200px 20px 200px; 
-}
-
 .resume-box {
   display:flex;
   flex-direction: column;
-  width: 400px;
   align-items: center;
   border: 2px solid;
-}
+  }
 
 .button-space-footer {
   margin-bottom: 20px;
 }
 
+.container-text {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+
 /* media queries */
 
 
 @media only screen and (min-width: 641px) {
+
+.container-text {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container-text-2 {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.flex-container-5 {
+  display: flex;
+  border: 2px solid;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  margin: 0 200px 100px 200px; 
+}
 
 header {
   text-align: unset;
@@ -474,6 +493,11 @@ nav {
 .imagesize {
   display: inline-block;
   width: 20%;
+}
+
+.img-size-5 {
+  display: inline-block;
+  width: 60%;
 }
 
 .imagesize-about {
@@ -528,8 +552,7 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items:flex-start;
-  margin: 0 200px 100px 200px; 
+  align-items:flex-start; 
   
 }
 
@@ -573,6 +596,22 @@ input[type=email] {
   margin-bottom: 16px; 
 }
 
+.resume-row-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  margin: 20px 200px 20px 200px; 
+}
+
+.resume-box {
+display:flex;
+flex-direction: column;
+width: auto;
+align-items: center;
+border: 2px solid;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -582,6 +621,7 @@ input[type=email] {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .col-lg-5 {
   width: 40%;
