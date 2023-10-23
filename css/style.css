@@ -114,8 +114,6 @@ header {
 }
 
 .css-box-shadow {
-  width: [object Object]px;
-  height: [object Object]px;
   background-color: #f3f3f3;
   border-bottom: solid #c3c0c0 1px;
   box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.1);
@@ -308,7 +306,7 @@ main {
 }
 
 .img-size-3 {
-  display: flexbox;
+  display: flex;
   width: 10%;
   justify-content: center;
 }
@@ -366,7 +364,7 @@ input[type=email] {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255 127 80 0.5);
+  border-top: 1px solid rgb(238, 90, 37);
 }
 
 .navtoggle.responsive li:last-child {
